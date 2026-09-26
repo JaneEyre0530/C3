@@ -1,0 +1,18 @@
+# Public, platform-neutral C3 defaults.
+# Supply model paths, datasets, and the trainer adapter in your own launcher.
+
+[c3]
+enabled = true
+reversal_scale = 0.0
+confidence_reversal_scale = 1.0
+confidence_mode = "span_mean_prob"  # token_prob | span_prob | span_mean_prob
+penalize_negative_advantage = false
+zero_adv_inject_beta = 0.0
+span_norm_ref_tokens = 0.0
+
+[events]
+# Event values are negative severities in [-1, 0]. Positive verifier events are ignored.
+invalid_action = -1.0
+repeat_search = 0.0
+missing_answer = 0.0
+truncated = 0.0

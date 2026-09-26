@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Models, datasets, checkpoints, and experiment output are intentionally kept
+# outside this source repository.
+checkpoints/
+data/
+datasets/
+logs/
+runs/
+wandb/
+*.parquet
+*.jsonl
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+.env
+.env.*
+!.env.example
